@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Members</title>
+</head>
+<body>
+
+  <h2>Gym Members</h2>
+
+  <a href="/add-member">➕ Add New Member</a>
+  <br><br>
+
+  <% if (members.length === 0) { %>
+    <p>No members found.</p>
+  <% } else { %>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Membership</th>
+        <th>Joined On</th>
+        <th>Action</th>
+      </tr>
+
+      <% members.forEach(member => { %>
+        <tr>
+          <td><%= member.name %></td>
+          <td><%= member.age %></td>
+          <td><%= member.gender %></td>
+          <td><%= member.membershipType %></td>
+          <td><%= member.joinDate.toDateString() %></td>
+
+          <td>
+            <a href="/members/<%= member._id %>/edit">Edit</a>
+
+            <form action="/delete-member/<%= member._id %>" method="POST" style="display:inline">
+              <button type="submit" onclick="return confirm('Are you sure?')">
+                Delete
+              </button>
+            </form>
+          </td>
+          
+        </tr>
+      <% }) %>
+    </table>
+  <% } %>
+
+</body>
+</html>

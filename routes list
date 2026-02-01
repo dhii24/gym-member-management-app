@@ -1,0 +1,6 @@
+GET    /add-member           → show add form
+POST   /add-member           → create member
+GET    /members              → view all members
+GET    /members/:id/edit     → show edit form
+POST   /members/:id          → update member
+POST   /delete-member/:id    → delete member

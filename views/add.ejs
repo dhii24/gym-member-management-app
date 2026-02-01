@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Member</title>
+</head>
+<body>
+
+  <h2>Add Gym Member</h2>
+
+  <form action="/add-member" method="POST">
+    <input type="text" name="name" placeholder="Name" required />
+    <br><br>
+
+    <input type="number" name="age" placeholder="Age" required />
+    <br><br>
+
+    <select name="gender" required>
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+    <br><br>
+
+    <select name="membershipType" required>
+      <option value="">Membership Type</option>
+      <option>Monthly</option>
+      <option>Quarterly</option>
+      <option>Yearly</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Add Member</button>
+  </form>
+
+</body>
+</html>
