@@ -29,6 +29,6 @@ A web application to manage gym members and to track their subscriptions. Built 
 ### ✏️ Update Member
 ![Update Member](screenshots/update-member.png)
 
-### 🏠 delete member
+### 🗑️ delete member
 ![delete member](screenshots/delete-member.png)
 
