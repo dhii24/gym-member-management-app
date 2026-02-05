@@ -5,9 +5,11 @@ A web application to manage gym members and to track their subscriptions. Built 
 ## Features
 
 - Add, update, and delete gym members
-- Track subscription plans and expiration
-- Responsive UI for desktop and mobile
-- User-friendly dashboard
+- View all registered members
+- Server-side rendering with EJS
+- MongoDB data persistence
+- Clean and responsive UI
+
 
 ## Tech Stack
 
@@ -15,3 +17,18 @@ A web application to manage gym members and to track their subscriptions. Built 
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB, Mongoose
 - **Others:** EJS for templating
+
+## 📸 Screenshots
+
+### ➕ Add Member
+![Add Member](screenshots/add-member.png)
+
+### 📋 Members List
+![Members List](screenshots/members-list.png)
+
+### ✏️ Update Member
+![Update Member](screenshots/update-member.png)
+
+### 🏠 delete member
+![delete member](screenshots/delete-member.png)
+
